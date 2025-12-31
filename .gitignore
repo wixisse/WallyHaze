@@ -1,0 +1,81 @@
+# Build directories
+build/
+build-*/
+*.AppDir/
+
+# Generated binaries
+WallyHaze
+*.exe
+*.dll
+*.so
+*.dylib
+
+# AppImage files (keep releases)
+*.AppImage
+!releases/**/*.AppImage
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+!toolchain-*.cmake
+
+# Qt generated files
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.moc
+.qmake.stash
+
+# IDE files
+.vscode/
+.idea/
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+
+# Temporary files
+*~
+*.tmp
+*.temp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+!releases/**/*.zip
+
+# Dependencies (keep appimagetool)
+!appimagetool-x86_64.AppImage
+
+# Generated documentation
+doc/html/
+doc/latex/
+
+# Coverage reports
+*.gcov
+*.gcda
+*.gcno
+coverage.info
+
+# Profiling data
+*.prof
