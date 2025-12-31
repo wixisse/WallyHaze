@@ -24,7 +24,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 
 # Set Qt6 path for Windows
-set(Qt6_DIR "/usr/x86_64-w64-mingw32/lib/cmake/Qt6")
+set(Qt6_DIR "/usr/x86_64-w64-mingw32/sys-root/mingw/lib/cmake/Qt6")
 
 # Windows specific settings
 set(CMAKE_WIN32_EXECUTABLE ON)

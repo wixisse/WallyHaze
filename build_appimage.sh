@@ -99,28 +99,28 @@ if [ -d "icons" ]; then
     mkdir -p "$APPDIR/usr/share/icons/hicolor/256x256/apps"
     mkdir -p "$APPDIR/usr/share/icons/hicolor/scalable/apps"
 
-    # Convert SVG icons to PNG for different sizes
+    # Convert SVG icons to PNG for different sizes using main logo
     if command -v rsvg-convert >/dev/null 2>&1; then
-        rsvg-convert -w 16 -h 16 "icons/wallyhaze-16.svg" > "$APPDIR/usr/share/icons/hicolor/16x16/apps/wallyhaze.png"
-        rsvg-convert -w 32 -h 32 "icons/wallyhaze-32.svg" > "$APPDIR/usr/share/icons/hicolor/32x32/apps/wallyhaze.png"
+        rsvg-convert -w 16 -h 16 "wallyhaze-logo.svg" > "$APPDIR/usr/share/icons/hicolor/16x16/apps/wallyhaze.png"
+        rsvg-convert -w 32 -h 32 "wallyhaze-logo.svg" > "$APPDIR/usr/share/icons/hicolor/32x32/apps/wallyhaze.png"
         rsvg-convert -w 48 -h 48 "wallyhaze-logo.svg" > "$APPDIR/usr/share/icons/hicolor/48x48/apps/wallyhaze.png"
-        rsvg-convert -w 64 -h 64 "icons/wallyhaze-64.svg" > "$APPDIR/usr/share/icons/hicolor/64x64/apps/wallyhaze.png"
+        rsvg-convert -w 64 -h 64 "wallyhaze-logo.svg" > "$APPDIR/usr/share/icons/hicolor/64x64/apps/wallyhaze.png"
         rsvg-convert -w 128 -h 128 "wallyhaze-logo.svg" > "$APPDIR/usr/share/icons/hicolor/128x128/apps/wallyhaze.png"
-        rsvg-convert -w 256 -h 256 "icons/wallyhaze-256.svg" > "$APPDIR/usr/share/icons/hicolor/256x256/apps/wallyhaze.png"
+        rsvg-convert -w 256 -h 256 "wallyhaze-logo.svg" > "$APPDIR/usr/share/icons/hicolor/256x256/apps/wallyhaze.png"
         echo "✅ Converted all icon sizes using rsvg-convert"
     elif command -v convert >/dev/null 2>&1; then
-        convert -size 16x16 "icons/wallyhaze-16.svg" "$APPDIR/usr/share/icons/hicolor/16x16/apps/wallyhaze.png"
-        convert -size 32x32 "icons/wallyhaze-32.svg" "$APPDIR/usr/share/icons/hicolor/32x32/apps/wallyhaze.png"
+        convert -size 16x16 "wallyhaze-logo.svg" "$APPDIR/usr/share/icons/hicolor/16x16/apps/wallyhaze.png"
+        convert -size 32x32 "wallyhaze-logo.svg" "$APPDIR/usr/share/icons/hicolor/32x32/apps/wallyhaze.png"
         convert -size 48x48 "wallyhaze-logo.svg" "$APPDIR/usr/share/icons/hicolor/48x48/apps/wallyhaze.png"
-        convert -size 64x64 "icons/wallyhaze-64.svg" "$APPDIR/usr/share/icons/hicolor/64x64/apps/wallyhaze.png"
+        convert -size 64x64 "wallyhaze-logo.svg" "$APPDIR/usr/share/icons/hicolor/64x64/apps/wallyhaze.png"
         convert -size 128x128 "wallyhaze-logo.svg" "$APPDIR/usr/share/icons/hicolor/128x128/apps/wallyhaze.png"
-        convert -size 256x256 "icons/wallyhaze-256.svg" "$APPDIR/usr/share/icons/hicolor/256x256/apps/wallyhaze.png"
+        convert -size 256x256 "wallyhaze-logo.svg" "$APPDIR/usr/share/icons/hicolor/256x256/apps/wallyhaze.png"
         echo "✅ Converted all icon sizes using ImageMagick"
     else
-        # Use existing PNG files if available
-        [ -f "icons/wallyhaze-48.png" ] && cp "icons/wallyhaze-48.png" "$APPDIR/usr/share/icons/hicolor/48x48/apps/wallyhaze.png"
-        [ -f "icons/wallyhaze-96.png" ] && cp "icons/wallyhaze-96.png" "$APPDIR/usr/share/icons/hicolor/128x128/apps/wallyhaze.png"
-        [ -f "icons/wallyhaze-100.png" ] && cp "icons/wallyhaze-100.png" "$APPDIR/usr/share/icons/hicolor/256x256/apps/wallyhaze.png"
+        # Create basic PNG from SVG if no converter available
+        if command -v rsvg-convert >/dev/null 2>&1; then
+            rsvg-convert -w 256 -h 256 "wallyhaze-logo.svg" > "$APPDIR/usr/share/icons/hicolor/256x256/apps/wallyhaze.png"
+        fi
         echo "⚠️  Using PNG files directly (no SVG converter found)"
     fi
 
