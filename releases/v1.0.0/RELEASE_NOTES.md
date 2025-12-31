@@ -2,11 +2,11 @@
 
 **Release Date:** December 31, 2024  
 **Version:** 1.0.0  
-**Build:** Production Release with New Icon Design
+**Build:** Production Release
 
 ## What's New
 
-This is the initial stable release of WallyHaze - a beautiful, modern wallpaper browser and setter with infinite scroll capabilities, now featuring a sleek new icon design.
+This is the initial stable release of WallyHaze - a beautiful, modern wallpaper browser and setter with infinite scroll capabilities.
 
 ### Key Features
 
@@ -17,14 +17,6 @@ This is the initial stable release of WallyHaze - a beautiful, modern wallpaper 
 - **KDE Lockscreen Integration** - Built-in KDE lockscreen wallpaper support
 - **Modern Qt6 Interface** - Clean, responsive user interface
 - **Cross-Platform** - Works on all major Linux distributions
-
-### Fresh Icon Design
-
-- **New Modern Icon** - Clean, professional image gallery-style icon with beautiful blue gradients
-- **Perfect for Wallpaper Apps** - The icon represents image/photo management with a sophisticated design
-- **Consistent Across All Sizes** - From 16px system tray to 256px desktop shortcuts
-- **Desktop Integration** - Proper system tray and application menu integration
-- **Scalable SVG Format** - Crystal clear at any resolution
 
 ## Available Downloads
 
@@ -45,7 +37,6 @@ chmod +x WallyHaze-1.0.0-x86_64.AppImage
 # Or integrate with desktop (optional)
 ./WallyHaze-1.0.0-x86_64.AppImage --appimage-extract
 sudo cp squashfs-root/wallyhaze.desktop /usr/share/applications/
-sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 ```
 
 ## Technical Specifications
@@ -55,7 +46,6 @@ sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 - **Build System:** CMake 3.16+
 - **Dependencies:** All bundled in AppImage
 - **Architecture:** x86_64 (Intel/AMD 64-bit)
-- **Icon Format:** SVG with beautiful blue gradients
 
 ## Installation
 
@@ -66,9 +56,8 @@ sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 
 ### Method 2: System Integration
 The AppImage includes desktop integration files for a native feel:
-- Application menu entry with new icon
+- Application menu entry
 - File associations
-- Icon themes (16px to 256px) with modern design
 - AppStream metadata
 
 ## System Requirements
@@ -83,16 +72,6 @@ The AppImage includes desktop integration files for a native feel:
 - **RAM:** 1 GB+ for smooth image caching
 - **Internet:** Broadband connection for wallpaper downloads
 - **Display:** 1920×1080 or higher resolution
-
-## Icon Design
-
-The new WallyHaze icon features:
-- **Modern Blue Gradients** - Professional radial and linear gradients from light blue to deep blue
-- **Image Gallery Theme** - Represents photo/wallpaper management perfectly
-- **Rounded Corners** - Contemporary design language
-- **Mountain Landscape Element** - Subtle reference to wallpaper content
-- **Sun/Light Element** - Bright accent for visual appeal
-- **Scalable Vector Graphics** - Perfect quality at any size
 
 ## Known Issues
 
@@ -110,7 +89,6 @@ None at this time. This is a stable release thoroughly tested across multiple di
 - **Compiler:** GCC with C++17 standard
 - **Packaging:** AppImageTool continuous build
 - **Quality:** Production-ready, fully tested build
-- **Icon Integration:** All sizes embedded (16px to 256px)
 
 ## Security & Verification
 
@@ -139,5 +117,4 @@ Future releases will include:
 
 **Release Team:** WallyHaze Development Team  
 **Build Date:** December 31, 2024  
-**License:** Check LICENSE.txt for details  
-**Icon Design:** Modern blue gradient image gallery theme
+**License:** Check LICENSE.txt for details

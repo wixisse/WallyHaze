@@ -43,7 +43,7 @@ For desktop integration (application menu, file associations, etc.):
 # Extract AppImage contents
 ./WallyHaze-1.0.0-x86_64.AppImage --appimage-extract
 
-# Copy desktop file and icons
+# Copy desktop file
 sudo cp squashfs-root/wallyhaze.desktop /usr/share/applications/
 sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 ```
