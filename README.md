@@ -4,9 +4,9 @@
 
 ![WallyHaze Logo](wallyhaze-logo.svg)
 
-[![Latest Release](https://img.shields.io/github/v/release/username/WallyHaze)](https://github.com/username/WallyHaze/releases)
-[![Downloads](https://img.shields.io/github/downloads/username/WallyHaze/total)](https://github.com/username/WallyHaze/releases)
-[![License](https://img.shields.io/github/license/username/WallyHaze)](LICENSE.txt)
+[![Latest Release](https://img.shields.io/github/v/release/wixisse/WallyHaze)](https://github.com/wixisse/WallyHaze/releases)
+[![Downloads](https://img.shields.io/github/downloads/wixisse/WallyHaze/total)](https://github.com/wixisse/WallyHaze/releases)
+[![License](https://img.shields.io/github/license/wixisse/WallyHaze)](LICENSE.txt)
 
 ## ✨ Features
 
@@ -27,7 +27,7 @@
 
 ### Quick Start (Recommended)
 
-1. **Download the latest AppImage** from the [Releases](https://github.com/username/WallyHaze/releases) page
+1. **Download the latest AppImage** from the [Releases](https://github.com/wixisse/WallyHaze/releases) page
 2. **Make it executable:**
    ```bash
    chmod +x WallyHaze-1.0.0-x86_64.AppImage
@@ -95,7 +95,7 @@ WallyHaze includes special integration for KDE Plasma users. See [KDE_LOCKSCREEN
 ### Build Steps
 ```bash
 # Clone the repository
-git clone https://github.com/username/WallyHaze.git
+git clone https://github.com/wixisse/WallyHaze.git
 cd WallyHaze
 
 # Create build directory
@@ -143,12 +143,12 @@ WallyHaze features a beautiful, modern icon with:
 We welcome contributions! Here's how you can help:
 
 ### Reporting Issues
-- Use the [Issues](https://github.com/username/WallyHaze/issues) tab to report bugs
+- Use the [Issues](https://github.com/wixisse/WallyHaze/issues) tab to report bugs
 - Include your Linux distribution, version, and steps to reproduce
 - Attach screenshots if applicable
 
 ### Feature Requests
-- Check existing [Issues](https://github.com/username/WallyHaze/issues) first
+- Check existing [Issues](https://github.com/wixisse/WallyHaze/issues) first
 - Describe the feature and why it would be useful
 - Consider contributing code if you're able!
 
@@ -167,7 +167,7 @@ sudo dnf install qt6-qtbase-devel cmake gcc-c++  # Fedora
 # sudo apt install qt6-base-dev cmake build-essential  # Ubuntu/Debian
 
 # Clone and build
-git clone https://github.com/username/WallyHaze.git
+git clone https://github.com/wixisse/WallyHaze.git
 cd WallyHaze
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Debug
@@ -199,13 +199,13 @@ This project is licensed under the [MIT License](LICENSE.txt) - see the LICENSE 
 
 ## 📞 Support
 
-- **GitHub Issues:** [Report bugs and request features](https://github.com/username/WallyHaze/issues)
-- **Documentation:** Check the [Wiki](https://github.com/username/WallyHaze/wiki) for detailed guides
-- **Discussions:** Join conversations in [Discussions](https://github.com/username/WallyHaze/discussions)
+- **GitHub Issues:** [Report bugs and request features](https://github.com/wixisse/WallyHaze/issues)
+- **Documentation:** Check the [Wiki](https://github.com/wixisse/WallyHaze/wiki) for detailed guides
+- **Discussions:** Join conversations in [Discussions](https://github.com/wixisse/WallyHaze/discussions)
 
 ## 🌟 Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=username/WallyHaze&type=Date)](https://star-history.com/#username/WallyHaze&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=wixisse/WallyHaze&type=Date)](https://star-history.com/#wixisse/WallyHaze&Date)
 
 ---
 
