@@ -14,6 +14,9 @@ WallyHaze
 *.AppImage
 !releases/**/*.AppImage
 
+# External tools
+appimagetool-*
+
 # CMake generated files
 CMakeCache.txt
 CMakeFiles/
@@ -64,8 +67,19 @@ Thumbs.db
 *.zip
 !releases/**/*.zip
 
-# Dependencies (keep appimagetool)
-!appimagetool-x86_64.AppImage
+# Windows packages and installers
+WallyHaze-Windows-*/
+*.nsi
+
+# Development and cleanup files
+*cleanup*.md
+*release*.md
+prepare_*.sh
+github_*.md
+
+# Duplicate image files
+image-32*.svg
+!wallyhaze-logo.svg
 
 # Generated documentation
 doc/html/
