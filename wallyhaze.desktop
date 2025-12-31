@@ -1,0 +1,16 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=WallyHaze
+Comment=Beautiful wallpaper browser and setter with infinite scroll
+GenericName=Wallpaper Browser
+Exec=WallyHaze
+Icon=wallyhaze
+Terminal=false
+StartupNotify=true
+Categories=Graphics;Photography;Utility;DesktopSettings;
+Keywords=wallpaper;background;desktop;image;lockscreen;wallhaven;browse;
+MimeType=image/jpeg;image/png;image/webp;
+StartupWMClass=WallyHaze
+X-AppImage-Version=1.0.0
