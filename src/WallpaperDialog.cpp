@@ -285,32 +285,32 @@ void WallpaperDialog::setAsWallpaper(const QString &filepath)
     QString message;
     if (desktopEnv.contains("kde") || desktopEnv.contains("plasma")) {
         if (desktopSuccess) {
-            message = "✓ Desktop wallpaper set successfully!\n";
-            message += "✓ Lock screen wallpaper configuration updated.\n\n";
-            message += "📋 For KDE lock screen changes to take effect:\n";
+            message = "Desktop wallpaper set successfully.\n";
+            message += "Lock screen wallpaper configuration updated.\n\n";
+            message += "For KDE lock screen changes to take effect:\n";
             message += "1. Lock your screen (Ctrl+Alt+L)\n";
             message += "2. Or go to System Settings > Screen Locking\n";
             message += "3. The new wallpaper should appear on next lock\n\n";
             message += "If lock screen doesn't update:\n";
-            message += "• Go to System Settings > Screen Locking > Appearance\n";
-            message += "• Select 'Image' wallpaper type\n";
-            message += "• Browse and select: " + filepath;
+            message += "- Go to System Settings > Screen Locking > Appearance\n";
+            message += "- Select 'Image' wallpaper type\n";
+            message += "- Browse and select: " + filepath;
             QMessageBox::information(this, "KDE Wallpaper Set", message);
         } else {
-            message = "⚠ Automatic wallpaper setting failed.\n\n";
+            message = "Automatic wallpaper setting failed.\n\n";
             message += "Manual setup for KDE:\n";
-            message += "Desktop: Right-click desktop → Configure Desktop and Wallpaper\n";
-            message += "Lock Screen: System Settings → Screen Locking → Appearance\n";
+            message += "Desktop: Right-click desktop > Configure Desktop and Wallpaper\n";
+            message += "Lock Screen: System Settings > Screen Locking > Appearance\n";
             QMessageBox::information(this, "Manual Setup Required", message + "\n\nWallpaper saved to:\n" + filepath);
         }
     } else if (desktopSuccess && lockScreenSuccess) {
-        message = "✓ Wallpaper set successfully for both desktop and lock screen!";
+        message = "Wallpaper set successfully for both desktop and lock screen.";
         QMessageBox::information(this, "Success", message);
     } else if (desktopSuccess) {
-        message = "✓ Desktop wallpaper set successfully!\n⚠ Lock screen wallpaper may need manual setting.";
+        message = "Desktop wallpaper set successfully.\nLock screen wallpaper may need manual setting.";
         QMessageBox::information(this, "Partial Success", message + "\n\nWallpaper saved to:\n" + filepath);
     } else {
-        message = "⚠ Could not automatically set wallpaper for your desktop environment.\n";
+        message = "Could not automatically set wallpaper for your desktop environment.\n";
         message += "Detected DE: " + desktopEnv + "\n";
         message += "Please set manually from your system settings.";
         QMessageBox::information(this, "Manual Setup Required", message + "\n\nWallpaper saved to:\n" + filepath);
@@ -333,8 +333,8 @@ void WallpaperDialog::setAsWallpaper(const QString &filepath)
     QProcess::execute("reg", QStringList() << "add" << lockScreenReg << "/v" << "PortraitAssetPath" << "/t" << "REG_SZ" << "/d" << windowsPath << "/f");
     
     QMessageBox::information(this, "Success", 
-        "✓ Desktop wallpaper set successfully!\n"
-        "⚠ Lock screen: Please go to Windows Settings > Personalization > Lock screen to set manually.");
+        "Desktop wallpaper set successfully.\n"
+        "Lock screen: Please go to Windows Settings > Personalization > Lock screen to set manually.");
         
 #elif defined(Q_OS_MAC)
     // Set desktop wallpaper for all spaces
@@ -348,8 +348,8 @@ void WallpaperDialog::setAsWallpaper(const QString &filepath)
     
     if (success) {
         QMessageBox::information(this, "Success", 
-            "✓ Desktop wallpaper set successfully!\n"
-            "⚠ Lock screen: Go to System Preferences > Desktop & Screen Saver > Screen Saver to set manually.");
+            "Desktop wallpaper set successfully.\n"
+            "Lock screen: Go to System Preferences > Desktop & Screen Saver > Screen Saver to set manually.");
     } else {
         QMessageBox::warning(this, "Error", 
             "Failed to set desktop wallpaper automatically.\n\n"
