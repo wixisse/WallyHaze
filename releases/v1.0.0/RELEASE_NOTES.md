@@ -16,15 +16,22 @@ This is the initial stable release of WallyHaze - a beautiful, modern wallpaper 
 - **Multi-Monitor Support** - Set different wallpapers for multiple displays
 - **KDE Lockscreen Integration** - Built-in KDE lockscreen wallpaper support
 - **Modern Qt6 Interface** - Clean, responsive user interface
-- **Cross-Platform** - Works on all major Linux distributions
+- **Cross-Platform** - Works on all major Linux distributions and Windows
+- **Windows Support** - Native Windows build with portable package
 
 ## Available Downloads
 
-### Linux AppImage (Recommended)
+### Linux AppImage
 - **File:** `WallyHaze-1.0.0-x86_64.AppImage`
-- **Size:** 14.2 MB
-- **SHA256:** `1ea7e30624db1215d316fe48c584263bacb152e88d42634c172724ad4fd4e342`
+- **Size:** 15 MB
+- **SHA256:** `e2ef8ba0f4845c5e967d1d7b42c4720f7b5a0c2f50d29d035565c94876e0bdaf`
 - **Requirements:** Any Linux distribution with glibc 2.17+ (2012+)
+
+### Windows Portable Package
+- **File:** `WallyHaze-Windows-1.0.0.zip`
+- **Size:** 24 MB
+- **SHA256:** `1a98f3b6c5061fcac025db018563e566fb5359b713f6df126d7a3ab8eb7e4b6f`
+- **Requirements:** Windows 10/11 (64-bit)
 
 #### How to Use the AppImage:
 ```bash
@@ -39,6 +46,18 @@ chmod +x WallyHaze-1.0.0-x86_64.AppImage
 sudo cp squashfs-root/wallyhaze.desktop /usr/share/applications/
 ```
 
+#### How to Use the Windows Package:
+```bash
+# Extract the ZIP file
+unzip WallyHaze-Windows-1.0.0.zip
+
+# Navigate to the folder
+cd WallyHaze-Windows-1.0.0
+
+# Double-click WallyHaze.exe to run
+# All required DLLs and dependencies are included
+```
+
 ## Technical Specifications
 
 - **Framework:** Qt6 (Core, Widgets, Network)
@@ -49,26 +68,37 @@ sudo cp squashfs-root/wallyhaze.desktop /usr/share/applications/
 
 ## Installation
 
-### Method 1: AppImage (Universal Linux)
+### Linux - Method 1: AppImage (Universal)
 1. Download `WallyHaze-1.0.0-x86_64.AppImage`
 2. Make it executable: `chmod +x WallyHaze-1.0.0-x86_64.AppImage`
 3. Run: `./WallyHaze-1.0.0-x86_64.AppImage`
 
-### Method 2: System Integration
+### Linux - Method 2: System Integration
 The AppImage includes desktop integration files for a native feel:
 - Application menu entry
 - File associations
 - AppStream metadata
 
+### Windows - Portable Package
+1. Download `WallyHaze-Windows-1.0.0.zip`
+2. Extract to any folder (e.g., `C:\Program Files\WallyHaze`)
+3. Double-click `WallyHaze.exe` to run
+4. No installation required - fully portable!
+
 ## System Requirements
 
-### Minimum Requirements:
+### Linux - Minimum Requirements:
 - **OS:** Linux with glibc 2.17+ (Ubuntu 14.04+, CentOS 7+, etc.)
 - **RAM:** 256 MB available memory
 - **Disk:** 50 MB free space
 - **Display:** X11 or Wayland compatible
 
-### Recommended:
+### Windows - Minimum Requirements:
+- **OS:** Windows 10 or Windows 11 (64-bit)
+- **RAM:** 512 MB available memory
+- **Disk:** 100 MB free space
+
+### Recommended (All Platforms):
 - **RAM:** 1 GB+ for smooth image caching
 - **Internet:** Broadband connection for wallpaper downloads
 - **Display:** 1920×1080 or higher resolution
@@ -85,27 +115,40 @@ None at this time. This is a stable release thoroughly tested across multiple di
 
 ## Build Information
 
+### Linux Build
 - **Built with:** CMake + Qt6 on Fedora Linux
 - **Compiler:** GCC with C++17 standard
 - **Packaging:** AppImageTool continuous build
-- **Quality:** Production-ready, fully tested build
+
+### Windows Build
+- **Built with:** CMake + Qt6 cross-compilation
+- **Compiler:** MinGW-w64 GCC 15.2.1 with C++17 standard
+- **Packaging:** Portable ZIP with all dependencies included
+
+**Quality:** Production-ready, fully tested builds on both platforms
 
 ## Security & Verification
 
 Verify your download integrity:
 ```bash
+# Linux AppImage
 sha256sum WallyHaze-1.0.0-x86_64.AppImage
-# Should match: 1ea7e30624db1215d316fe48c584263bacb152e88d42634c172724ad4fd4e342
+# Should match: e2ef8ba0f4845c5e967d1d7b42c4720f7b5a0c2f50d29d035565c94876e0bdaf
+
+# Windows Package
+sha256sum WallyHaze-Windows-1.0.0.zip
+# Should match: 1a98f3b6c5061fcac025db018563e566fb5359b713f6df126d7a3ab8eb7e4b6f
 ```
 
 ## What's Next
 
 Future releases will include:
-- Windows builds
 - Additional wallpaper sources
 - Advanced image filters
 - Automatic wallpaper rotation
 - Plugin system
+- macOS support
+- Flatpak and Snap packages
 
 ---
 
