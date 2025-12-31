@@ -1,4 +1,4 @@
-# WallyHaze 🖼️
+# WallyHaze
 
 **A beautiful, modern wallpaper browser and setter for Linux with infinite scroll capabilities**
 
@@ -8,31 +8,27 @@
 [![Downloads](https://img.shields.io/github/downloads/wixisse/WallyHaze/total)](https://github.com/wixisse/WallyHaze/releases)
 [![License](https://img.shields.io/github/license/wixisse/WallyHaze)](LICENSE.txt)
 
-## ✨ Features
+## Features
 
-- **🌊 Infinite Scroll Browsing** - Seamlessly browse thousands of high-quality wallpapers
-- **🔍 Advanced Search & Filtering** - Find wallpapers by categories, colors, resolutions, and more
-- **⚡ Lightning-Fast Performance** - Optimized image loading and caching system
-- **🖥️ Multi-Monitor Support** - Set different wallpapers for multiple displays
-- **🔒 KDE Lockscreen Integration** - Built-in KDE lockscreen wallpaper support
-- **🎨 Modern Qt6 Interface** - Clean, responsive user interface
-- **📱 Cross-Platform** - Works on all major Linux distributions
-- **🚀 AppImage Distribution** - No installation required, runs everywhere
+- **Infinite Scroll Browsing** - Seamlessly browse thousands of high-quality wallpapers
+- **Advanced Search & Filtering** - Find wallpapers by categories, colors, resolutions, and more
+- **Lightning-Fast Performance** - Optimized image loading and caching system
+- **Multi-Monitor Support** - Set different wallpapers for multiple displays
+- **KDE Lockscreen Integration** - Built-in KDE lockscreen wallpaper support
+- **Modern Qt6 Interface** - Clean, responsive user interface
+- **Cross-Platform** - Works on all major Linux distributions
+- **AppImage Distribution** - No installation required, runs everywhere
 
-## 📸 Screenshots
-
-*Coming soon - Screenshots will be added to showcase the beautiful interface*
-
-## 📥 Download & Installation
+## Download & Installation
 
 ### Quick Start (Recommended)
 
-1. **Download the latest AppImage** from the [Releases](https://github.com/wixisse/WallyHaze/releases) page
-2. **Make it executable:**
+1. Download the latest AppImage from the [Releases](https://github.com/wixisse/WallyHaze/releases) page
+2. Make it executable:
    ```bash
    chmod +x WallyHaze-1.0.0-x86_64.AppImage
    ```
-3. **Run it:**
+3. Run it:
    ```bash
    ./WallyHaze-1.0.0-x86_64.AppImage
    ```
@@ -52,7 +48,7 @@ sudo cp squashfs-root/wallyhaze.desktop /usr/share/applications/
 sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 ```
 
-## 🛠️ System Requirements
+## System Requirements
 
 ### Minimum Requirements
 - **OS:** Linux with glibc 2.17+ (Ubuntu 14.04+, CentOS 7+, etc.)
@@ -65,7 +61,7 @@ sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 - **Internet:** Broadband connection for wallpaper downloads
 - **Display:** 1920×1080 or higher resolution
 
-## 🚀 Usage
+## Usage
 
 ### Basic Usage
 1. Launch WallyHaze
@@ -84,7 +80,7 @@ sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 
 WallyHaze includes special integration for KDE Plasma users. See [KDE_LOCKSCREEN_SETUP.md](KDE_LOCKSCREEN_SETUP.md) for detailed setup instructions.
 
-## 🏗️ Building from Source
+## Building from Source
 
 ### Prerequisites
 - Qt6 (Core, Widgets, Network)
@@ -123,22 +119,14 @@ cd ..
 ### Cross-compilation for Windows
 ```bash
 # Install MinGW-w64 cross-compiler and Qt6 for Windows
-# See BUILD_WINDOWS.md for detailed instructions
+# See WINDOWS_BUILD.md for detailed instructions
 
 cmake -B build-windows -DCMAKE_TOOLCHAIN_FILE=toolchain-mingw64.cmake
 cmake --build build-windows --config Release
 ./build_windows.sh
 ```
 
-## 🎨 Icon Design
-
-WallyHaze features a beautiful, modern icon with:
-- **Blue gradient theme** - Professional and eye-catching
-- **Image gallery representation** - Perfect for a wallpaper application
-- **Scalable vector graphics** - Crystal clear at any size
-- **Consistent across all platforms** - From system tray to desktop shortcuts
-
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how you can help:
 
@@ -150,7 +138,7 @@ We welcome contributions! Here's how you can help:
 ### Feature Requests
 - Check existing [Issues](https://github.com/wixisse/WallyHaze/issues) first
 - Describe the feature and why it would be useful
-- Consider contributing code if you're able!
+- Consider contributing code if you're able
 
 ### Code Contributions
 1. Fork the repository
@@ -174,41 +162,43 @@ cmake .. -DCMAKE_BUILD_TYPE=Debug
 make -j$(nproc)
 ```
 
-## 📋 Roadmap
+## Documentation
 
-- [ ] **Windows Support** - Native Windows build
-- [ ] **Additional Wallpaper Sources** - Support for more wallpaper APIs
-- [ ] **Advanced Filters** - More sophisticated filtering options
-- [ ] **Automatic Rotation** - Scheduled wallpaper changes
-- [ ] **Plugin System** - Extensible architecture for custom features
-- [ ] **Favorites System** - Save and organize favorite wallpapers
-- [ ] **Custom Collections** - Create personal wallpaper collections
-- [ ] **Social Features** - Share wallpapers with friends
+For detailed guides and documentation, please refer to the following files in this repository:
 
-## 📄 License
+- **[KDE_LOCKSCREEN_SETUP.md](KDE_LOCKSCREEN_SETUP.md)** - KDE Plasma lockscreen setup guide
+- **[WINDOWS_BUILD.md](WINDOWS_BUILD.md)** - Windows cross-compilation instructions
+- **[PROJECT_CLEANUP_SUMMARY.md](PROJECT_CLEANUP_SUMMARY.md)** - Project development history
+- **[releases/v1.0.0/RELEASE_NOTES.md](releases/v1.0.0/RELEASE_NOTES.md)** - Detailed release notes
+
+## Roadmap
+
+- Windows Support - Native Windows build
+- Additional Wallpaper Sources - Support for more wallpaper APIs
+- Advanced Filters - More sophisticated filtering options
+- Automatic Rotation - Scheduled wallpaper changes
+- Plugin System - Extensible architecture for custom features
+- Favorites System - Save and organize favorite wallpapers
+- Custom Collections - Create personal wallpaper collections
+
+## License
 
 This project is licensed under the [MIT License](LICENSE.txt) - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Qt Framework** - For the excellent cross-platform GUI framework
 - **Wallhaven API** - For providing access to high-quality wallpapers
 - **AppImage Project** - For making Linux application distribution simple
-- **Icons8** - For inspiration in modern icon design
 - **Contributors** - Everyone who helps make WallyHaze better
 
-## 📞 Support
+## Support
 
 - **GitHub Issues:** [Report bugs and request features](https://github.com/wixisse/WallyHaze/issues)
-- **Documentation:** Check the [Wiki](https://github.com/wixisse/WallyHaze/wiki) for detailed guides
 - **Discussions:** Join conversations in [Discussions](https://github.com/wixisse/WallyHaze/discussions)
-
-## 🌟 Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=wixisse/WallyHaze&type=Date)](https://star-history.com/#wixisse/WallyHaze&Date)
 
 ---
 
-**Made with ❤️ for the Linux community**
+**Made with care for the Linux community**
 
-*WallyHaze v1.0.0 - Making Linux desktops beautiful, one wallpaper at a time.* ✨
+*WallyHaze v1.0.0 - Making Linux desktops beautiful, one wallpaper at a time.*

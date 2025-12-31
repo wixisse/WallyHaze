@@ -1,24 +1,24 @@
-# WallyHaze v1.0.0 Release Notes 🖼️
+# WallyHaze v1.0.0 Release Notes
 
 **Release Date:** December 31, 2024  
 **Version:** 1.0.0  
 **Build:** Production Release with New Icon Design
 
-## 🎉 What's New
+## What's New
 
 This is the initial stable release of WallyHaze - a beautiful, modern wallpaper browser and setter with infinite scroll capabilities, now featuring a sleek new icon design.
 
-### ✨ Key Features
+### Key Features
 
-- **🌊 Infinite Scroll Browsing** - Seamlessly browse thousands of high-quality wallpapers
-- **🔍 Advanced Search & Filtering** - Find wallpapers by categories, colors, resolutions, and more
-- **⚡ Lightning-Fast Performance** - Optimized image loading and caching system
-- **🖥️ Multi-Monitor Support** - Set different wallpapers for multiple displays
-- **🔒 KDE Lockscreen Integration** - Built-in KDE lockscreen wallpaper support
-- **🎨 Modern Qt6 Interface** - Clean, responsive user interface
-- **📱 Cross-Platform** - Works on all major Linux distributions
+- **Infinite Scroll Browsing** - Seamlessly browse thousands of high-quality wallpapers
+- **Advanced Search & Filtering** - Find wallpapers by categories, colors, resolutions, and more
+- **Lightning-Fast Performance** - Optimized image loading and caching system
+- **Multi-Monitor Support** - Set different wallpapers for multiple displays
+- **KDE Lockscreen Integration** - Built-in KDE lockscreen wallpaper support
+- **Modern Qt6 Interface** - Clean, responsive user interface
+- **Cross-Platform** - Works on all major Linux distributions
 
-### 🎨 Fresh Icon Design
+### Fresh Icon Design
 
 - **New Modern Icon** - Clean, professional image gallery-style icon with beautiful blue gradients
 - **Perfect for Wallpaper Apps** - The icon represents image/photo management with a sophisticated design
@@ -26,7 +26,7 @@ This is the initial stable release of WallyHaze - a beautiful, modern wallpaper 
 - **Desktop Integration** - Proper system tray and application menu integration
 - **Scalable SVG Format** - Crystal clear at any resolution
 
-## 📦 Available Downloads
+## Available Downloads
 
 ### Linux AppImage (Recommended)
 - **File:** `WallyHaze-1.0.0-x86_64.AppImage`
@@ -48,7 +48,7 @@ sudo cp squashfs-root/wallyhaze.desktop /usr/share/applications/
 sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 ```
 
-## 🛠️ Technical Specifications
+## Technical Specifications
 
 - **Framework:** Qt6 (Core, Widgets, Network)
 - **Language:** C++17
@@ -57,7 +57,7 @@ sudo cp -r squashfs-root/usr/share/icons/* /usr/share/icons/
 - **Architecture:** x86_64 (Intel/AMD 64-bit)
 - **Icon Format:** SVG with beautiful blue gradients
 
-## 🚀 Installation
+## Installation
 
 ### Method 1: AppImage (Universal Linux)
 1. Download `WallyHaze-1.0.0-x86_64.AppImage`
@@ -71,7 +71,7 @@ The AppImage includes desktop integration files for a native feel:
 - Icon themes (16px to 256px) with modern design
 - AppStream metadata
 
-## 🔧 System Requirements
+## System Requirements
 
 ### Minimum Requirements:
 - **OS:** Linux with glibc 2.17+ (Ubuntu 14.04+, CentOS 7+, etc.)
@@ -84,7 +84,7 @@ The AppImage includes desktop integration files for a native feel:
 - **Internet:** Broadband connection for wallpaper downloads
 - **Display:** 1920×1080 or higher resolution
 
-## 🎨 Icon Design
+## Icon Design
 
 The new WallyHaze icon features:
 - **Modern Blue Gradients** - Professional radial and linear gradients from light blue to deep blue
@@ -94,17 +94,17 @@ The new WallyHaze icon features:
 - **Sun/Light Element** - Bright accent for visual appeal
 - **Scalable Vector Graphics** - Perfect quality at any size
 
-## 🐛 Known Issues
+## Known Issues
 
 None at this time. This is a stable release thoroughly tested across multiple distributions.
 
-## 🤝 Support & Contributing
+## Support & Contributing
 
 - **Issues:** Report bugs and feature requests on GitHub
 - **Documentation:** See `README.md` for detailed usage instructions
 - **KDE Integration:** See `KDE_LOCKSCREEN_SETUP.md` for lockscreen setup
 
-## 🏗️ Build Information
+## Build Information
 
 - **Built with:** CMake + Qt6 on Fedora Linux
 - **Compiler:** GCC with C++17 standard
@@ -112,7 +112,7 @@ None at this time. This is a stable release thoroughly tested across multiple di
 - **Quality:** Production-ready, fully tested build
 - **Icon Integration:** All sizes embedded (16px to 256px)
 
-## 🔐 Security & Verification
+## Security & Verification
 
 Verify your download integrity:
 ```bash
@@ -120,7 +120,7 @@ sha256sum WallyHaze-1.0.0-x86_64.AppImage
 # Should match: 1ea7e30624db1215d316fe48c584263bacb152e88d42634c172724ad4fd4e342
 ```
 
-## 📈 What's Next
+## What's Next
 
 Future releases will include:
 - Windows builds
@@ -131,9 +131,9 @@ Future releases will include:
 
 ---
 
-**🎉 Thank you for using WallyHaze!**
+**Thank you for using WallyHaze!**
 
-*WallyHaze v1.0.0 - Making Linux desktops beautiful, one wallpaper at a time.* ✨
+*WallyHaze v1.0.0 - Making Linux desktops beautiful, one wallpaper at a time.*
 
 ---
 
